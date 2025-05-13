@@ -1,0 +1,53 @@
+/* src/app/Style/profile.css */
+
+.profile-container {
+    background: #3182ce; /* Màu xanh */
+    color: #ffffff; /* Màu chữ trắng */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7fafc; /* Màu nền nhẹ */
+  }
+  
+  .profile-card {
+    background-color: #3182ce;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 28rem;
+    width: 100%;
+  }
+  
+  .profile-avatar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .profile-avatar img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 4px solid #3182ce; /* Màu xanh */
+  }
+  
+  .profile-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    text-align: center;
+    color: #2d3748; /* Màu tối */
+  }
+  
+  .profile-email {
+    text-align: center;
+    color: #718096; /* Màu xám */
+    margin-top: 0.5rem;
+  }
+  
+  .profile-bio {
+    color: #4a5568; /* Màu xám nhạt */
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
