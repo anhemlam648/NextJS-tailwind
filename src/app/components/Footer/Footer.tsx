@@ -1,5 +1,5 @@
 import { FaPhoneAlt, FaEnvelope, FaFacebookF, FaGithub, FaLinkedinIn } from 'react-icons/fa';
-//import Image from /''/
+import Image from '../../../../public/image/ca262e0354eea311c41134c3e4bc3bc2.gif'
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-r from-blue-500 to-indigo-500 text-white mt-10">
@@ -17,31 +17,29 @@ export default function Footer() {
 
         {/* Image */}
         <div className="text-center">
-          <div className="flex justify-center mb-4">
-            <img
-              src=""
-              alt="Logo"
-              width={50}
-              height={50}
-              className="w-16 h-16 object-contain"
-            />
-          </div>
+        <div className="flex justify-center mb-4">
+          <img
+            src={Image.src}
+            alt="Logo"
+            className="w-550 h-24 object-contain"
+          />
         </div>
+      </div>
         {/* Social */}
-        <div className="flex flex-col items-center md:items-end">
-          <h2 className="text-xl font-bold mb-4">Kết nối</h2>
-          <div className="flex space-x-4">
-            <a href="#" className="hover:text-blue-300 transition">
-              <FaFacebookF />
-            </a>
-            <a href="#" className="hover:text-blue-300 transition">
-              <FaGithub />
-            </a>
-            <a href="#" className="hover:text-blue-300 transition">
-              <FaLinkedinIn />
-            </a>
-          </div>
+       <div className="flex flex-col items-center md:items-end">
+        <h2 className="text-xl font-bold text-center mb-4">Connection</h2>
+        <div className="flex justify-center md:justify-end space-x-6">
+          <a href="#" className="text-xl hover:text-blue-300 transition">
+            <FaFacebookF />
+          </a>
+          <a href="#" className="text-xl hover:text-blue-300 transition">
+            <FaGithub />
+          </a>
+          <a href="#" className="text-xl hover:text-blue-300 transition">
+            <FaLinkedinIn />
+          </a>
         </div>
+      </div>
       </div>
 
       <div className="border-t border-white/30 mt-6">

@@ -14,9 +14,6 @@ export default function Home() {
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-lg text-center">
         <p className="text-xl text-gray-800">Hello world</p>
-        <li>
-          <ul></ul>    
-        </li>
         <Link href="/profile">
           {/* Bỏ thẻ <a> và sử dụng trực tiếp các lớp của thẻ bên trong Link */}
           <div className="mt-4 inline-block px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
