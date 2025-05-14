@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
-
+import Image from '../../../public/image/be-your-gif-maker.gif'
 const Profile = () => {
   useEffect(() => {
     gsap.fromTo(
@@ -17,7 +17,7 @@ const Profile = () => {
       <div className="box bg-white text-black rounded-xl shadow-xl p-8 max-w-md w-full text-center">
         <div className="flex justify-center mb-4">
           <img
-            src="https://www.w3schools.com/w3images/avatar2.png"
+            src= {Image.src}
             alt="Avatar"
             className="w-32 h-32 rounded-full border-4 border-yellow-500 shadow"
           />
