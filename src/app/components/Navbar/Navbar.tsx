@@ -1,6 +1,8 @@
+'use client';
 import Link from 'next/link';
 import Logo from '../../../../public/image/Black and Gold Logo.png'; // Import logo image
-
+import gsap from 'gsap';
+import { useEffect } from 'react';
 export default function Header() {
   return (
     <header className="bg-yellow-400 shadow">

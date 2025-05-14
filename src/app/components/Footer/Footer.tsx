@@ -1,6 +1,8 @@
+'use client';
 import { FaPhoneAlt, FaEnvelope, FaFacebookF, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import Image from '../../../../public/image/ca262e0354eea311c41134c3e4bc3bc2.gif';
-
+import gsap from 'gsap';
+import { useEffect } from 'react';
 export default function Footer() {
   return (
     <footer className="bg-yellow-400 text-black mt-10">
