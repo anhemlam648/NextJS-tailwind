@@ -4,6 +4,13 @@ import Image from '../../../../public/image/ca262e0354eea311c41134c3e4bc3bc2.gif
 import gsap from 'gsap';
 import { useEffect } from 'react';
 export default function Footer() {
+    useEffect(() => {
+      gsap.fromTo(
+        '.box', 
+        { scale: 0.5, opacity: 0 }, 
+        { scale: 1, opacity: 1, duration: 1, ease: 'bounce.out' }
+      );
+    }, []);
   return (
     <footer className="bg-yellow-400 text-black mt-10">
       <div className="max-w-7xl mx-auto px-4 py-4 grid grid-cols-1 md:grid-cols-3 gap-4">

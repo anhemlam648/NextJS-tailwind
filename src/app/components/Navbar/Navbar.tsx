@@ -4,6 +4,13 @@ import Logo from '../../../../public/image/Black and Gold Logo.png'; // Import l
 import gsap from 'gsap';
 import { useEffect } from 'react';
 export default function Header() {
+    useEffect(() => {
+      gsap.fromTo(
+        '.box', 
+        { scale: 0.5, opacity: 0 }, 
+        { scale: 1, opacity: 1, duration: 1, ease: 'bounce.out' }
+      );
+    }, []);
   return (
     <header className="bg-yellow-400 shadow">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
