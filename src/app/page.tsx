@@ -19,7 +19,6 @@ export default function Home() {
   }, []);
   */}
   useEffect(() => {
-  // Phóng to phần tử khi trang web tải
     gsap.fromTo(
       '.box', 
       { scale: 0.5, opacity: 0 }, 
@@ -34,10 +33,14 @@ export default function Home() {
           <h1 className="text-3xl font-bold text-gray-900 mb-4">Welcome to My Website</h1>
           <p className="text-lg text-gray-700 mb-6">
             Hi, I'm Nghia. I create modern and responsive web applications using Next.js and Tailwind CSS.
+            <br />
+            <Link href="/profile">
+              <span className="text-yellow-400 hover:text-yellow-600 transition duration-300">
+                Profile
+              </span>
+            </Link>
           </p>
         </div>
-
-
         <div className="md:w-1/2 flex justify-center box">
           <img
             src={IntroImage.src} // Use the correct path to your image
