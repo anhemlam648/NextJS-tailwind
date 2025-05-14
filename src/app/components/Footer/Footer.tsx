@@ -1,49 +1,51 @@
 import { FaPhoneAlt, FaEnvelope, FaFacebookF, FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import Image from '../../../../public/image/ca262e0354eea311c41134c3e4bc3bc2.gif'
+import Image from '../../../../public/image/ca262e0354eea311c41134c3e4bc3bc2.gif';
+
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-blue-500 to-indigo-500 text-white mt-10">
-        <div className="max-w-7xl mx-auto px-4 py-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+    <footer className="bg-yellow-400 text-black mt-10">
+      <div className="max-w-7xl mx-auto px-4 py-4 grid grid-cols-1 md:grid-cols-3 gap-4">
         {/* Contact */}
         <div>
           <h2 className="text-xl font-bold mb-4">Contact</h2>
           <p className="flex items-center gap-2 mb-2">
-            <FaPhoneAlt className="text-white" /> 0357708256
+            <FaPhoneAlt className="text-black" /> 0357708256
           </p>
           <p className="flex items-center gap-2">
-            <FaEnvelope className="text-white" /> vunghia467@gmail.com
+            <FaEnvelope className="text-black" /> vunghia467@gmail.com
           </p>
         </div>
 
         {/* Image */}
         <div className="text-center">
-        <div className="flex justify-center mb-4">
-          <img
-            src={Image.src}
-            alt="Logo"
-            className="w-550 h-24 object-contain"
-          />
+          <div className="flex justify-center mb-4">
+            <img
+              src={Image.src}
+              alt="Logo"
+              className="w-550 h-24 object-contain"
+            />
+          </div>
         </div>
-      </div>
+
         {/* Social */}
-       <div className="flex flex-col items-center md:items-end">
-        <h2 className="text-xl font-bold text-center mb-4">Connection</h2>
-        <div className="flex justify-center md:justify-end space-x-6">
-          <a href="#" className="text-xl hover:text-blue-300 transition">
-            <FaFacebookF />
-          </a>
-          <a href="#" className="text-xl hover:text-blue-300 transition">
-            <FaGithub />
-          </a>
-          <a href="#" className="text-xl hover:text-blue-300 transition">
-            <FaLinkedinIn />
-          </a>
+        <div className="flex flex-col items-center md:items-end">
+          <h2 className="text-xl font-bold text-center mb-4">Connection</h2>
+          <div className="flex justify-center md:justify-end space-x-6">
+            <a href="#" className="text-xl hover:text-white transition">
+              <FaFacebookF />
+            </a>
+            <a href="#" className="text-xl hover:text-white transition">
+              <FaGithub />
+            </a>
+            <a href="#" className="text-xl hover:text-white transition">
+              <FaLinkedinIn />
+            </a>
+          </div>
         </div>
-      </div>
       </div>
 
-      <div className="border-t border-white/30 mt-6">
-        <p className="text-center text-sm py-4 text-white/70">
+      <div className="border-t border-black/30 mt-6">
+        <p className="text-center text-sm py-4 text-black/70">
           © 2025 Vu Trung Nghia. All rights reserved.
         </p>
       </div>
