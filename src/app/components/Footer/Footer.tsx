@@ -43,10 +43,10 @@ export default function Footer() {
             <a href="#" className="text-xl hover:text-white transition">
               <FaFacebookF />
             </a>
-            <a href="#" className="text-xl hover:text-white transition">
+            <a href="https://github.com/anhemlam648" className="text-xl hover:text-white transition">
               <FaGithub />
             </a>
-            <a href="#" className="text-xl hover:text-white transition">
+            <a href="https://www.linkedin.com/in/v%C5%A9-ngh%C4%A9a-9277bb350/" className="text-xl hover:text-white transition">
               <FaLinkedinIn />
             </a>
           </div>
