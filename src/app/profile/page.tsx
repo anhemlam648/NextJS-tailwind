@@ -55,8 +55,7 @@ const Profile = () => {
         <h3 className="text-xl text-gray-800 font-semibold mb-4">📬 Send Email</h3>
         <a
           href="mailto:vunghia467@gmail.com"
-          className="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-6 py-3 rounded-full transition"
-        >
+          className="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-6 py-3 rounded-full transition">
           Send
         </a>
       </div>
