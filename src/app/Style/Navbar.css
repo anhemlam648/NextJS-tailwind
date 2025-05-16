@@ -1,0 +1,21 @@
+ header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 3px;
+    background: linear-gradient(90deg, #05f4f0 50%, #05f4f0 50%, #05f4f0 100%);
+    border-radius: 6px;
+    animation: pulse 3s ease-in-out infinite;
+    }
+    @keyframes pulse {
+    0%, 100% {
+    opacity: 1;
+    transform: scaleX(1);
+    }
+    50% {
+    opacity: 0.6;
+    transform: scaleX(0.8);
+    }
+}

@@ -40,7 +40,7 @@ export default function Footer() {
         <div className="flex flex-col items-center md:items-end">
           <h2 className="text-xl font-bold text-center mb-4">Connection</h2>
           <div className="flex justify-center md:justify-end space-x-6">
-            <a href="#" className="text-xl hover:text-white transition">
+            <a href="https://web.facebook.com/vu.nghia.18062" className="text-xl hover:text-white transition">
               <FaFacebookF />
             </a>
             <a href="https://github.com/anhemlam648" className="text-xl hover:text-white transition">
