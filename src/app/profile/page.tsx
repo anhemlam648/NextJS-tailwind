@@ -14,7 +14,7 @@ const Profile = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-white to-yellow-100 px-6 py-10">
+    <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-white to-yellow-100 px-5 py-10 mt-20"> {/* Added mt-16 here */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         
         <div className="bg-white rounded-2xl shadow-xl p-8 box text-center md:text-left">
@@ -50,15 +50,19 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      {/* Contact */}
-      <div className="mt-12 text-center box">
-        <h3 className="text-xl text-gray-800 font-semibold mb-4">📬 Send Email</h3>
-        <a
-          href="mailto:vunghia467@gmail.com"
-          className="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-6 py-3 rounded-full transition">
-          Send
-        </a>
+      {/* Contact 
+      <div className="mt-16 flex justify-center">
+        <div className="bg-white rounded-2xl shadow-xl p-8 max-w-md w-full box text-center">
+          <h3 className="text-2xl text-gray-800 font-semibold mb-6">📬 Send Email</h3>
+          <a
+            href="mailto:vunghia467@gmail.com"
+            className="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-8 py-4 rounded-full transition text-lg"
+          >
+            Send
+          </a>
+        </div>
       </div>
+      */}
     </div>
   );
 };
