@@ -12,20 +12,23 @@ export default function Footer() {
       );
     }, []);
   return (
-    <footer className="bg-yellow-400 text-black mt-10">
+    <footer className="bg-yellow-400 text-black">
       <div className="max-w-7xl mx-auto px-4 py-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+        
         {/* Contact */}
+       
         <div>
-          <h2 className="text-xl font-bold mb-4">Contact</h2>
-          <p className="flex items-center gap-2 mb-2">
+          <h2 className="text-xl font-bold mb-4 text-black selectable">Contact</h2>
+          <p className="flex items-center gap-2 mb-2 text-black font-bold selectable">
             <FaPhoneAlt className="text-black" /> 0357708256
           </p>
-          <p className="flex items-center gap-2">
+          <p className="flex items-center gap-2 text-black font-bold selectable">
             <FaEnvelope className="text-black" /> vunghia467@gmail.com
           </p>
         </div>
 
         {/* Image */}
+      
         <div className="text-center">
           <div className="flex justify-center mb-4">
             <img
@@ -37,6 +40,7 @@ export default function Footer() {
         </div>
 
         {/* Social */}
+        
         <div className="flex flex-col items-center md:items-end">
           <h2 className="text-xl font-bold text-center mb-4">Connection</h2>
           <div className="flex justify-center md:justify-end space-x-6">
@@ -51,10 +55,11 @@ export default function Footer() {
             </a>
           </div>
         </div>
+
       </div>
 
       <div className="border-t border-black/30 mt-6">
-        <p className="text-center text-sm py-4 text-black/70">
+        <p className="text-center text-sm py-4 text-black/70 font-bold">
           © 2025 Vu Trung Nghia. All rights reserved.
         </p>
       </div>
