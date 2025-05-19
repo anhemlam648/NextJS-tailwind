@@ -1,4 +1,4 @@
-//about/page.tsx
+/* About Page.tsx */
 'use client';
 import React, { useEffect } from 'react';
 import gsap from 'gsap';

@@ -1,5 +1,6 @@
-'use client';
+/*Profile Page*/
 
+'use client';
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import Image from '../../../public/image/be-your-gif-maker.gif'; // Avatar Image
