@@ -38,7 +38,7 @@ export default function ServicesPage() {
   }, []);
 
   return (
-   <div className="min-h-screen bg-gradient-to-b from-gray-800 via-gray-900 to-black flex items-center justify-center p-10">
+   <div className="min-h-screen bg-gradient-to-b from-gray-800 via-gray-900 to-black flex items-center justify-center p-10 px-6 py-16 mt-20 overflow-hidden">
 
       <div ref={containerRef} className="relative w-[300px] h-[300px] flex items-center justify-center">
         {/* Main Services */}
