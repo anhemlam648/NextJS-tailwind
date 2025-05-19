@@ -47,13 +47,13 @@ export default function ServicesPage() {
         {services.map((service, index) => (
           <div
             key={index}
-            className={`cards absolute w-[120px] h-[120px] bg-white-700 rounded-full flex flex-col items-center justify-center shadow-lg p-4 border border-yellow-400 hover:shadow-[0px_0px_20px_10px_rgba(0,255,0,0.7)] transition duration-300`}
+            className={`cards absolute w-[120px] h-[120px] bg-white-700 rounded-full flex flex-col items-center justify-center shadow-lg p-4 border border-yellow-400 hover:shadow-[0px_0px_20px_10px_rgba(255,215,0,0.7)] transition duration-300`}
             style={{
               transform: `rotate(${index * (360 / services.length)}deg) translate(180px) rotate(-${index * (360 / services.length)}deg)`,
             }}
           >
             <div className="text-3xl">{service.icon}</div>
-            <p className="text-sm text-center text-yellow-400 mt-2">{service.title}</p>
+            <p className="text-sm text-center text-green-400 mt-2">{service.title}</p>
           </div>
         ))}
       </div>
