@@ -39,16 +39,16 @@ export default function ServicesPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-800 via-gray-900 to-black flex items-center justify-center p-10 px-6 py-16 mt-20 overflow-hidden">
-      <div ref={containerRef} className="relative w-[230px] h-[230px] md:w-[14.375rem] md:h-[14.375rem] flex items-center justify-center">
+      <div ref={containerRef} className="relative w-[240px] h-[240px] md:w-[15rem] md:h-[15rem] flex items-center justify-center">
         {/* Main Services */}
-        <div className="absolute w-[80px] h-[80px] md:w-[5rem] md:h-[5rem] bg-yellow-500 rounded-full shadow-[0px_0px_15px_7px_rgba(255,215,0,0.7)]"></div>
+        <div className="absolute w-[85px] h-[85px] md:w-[5.3125rem] md:h-[5.3125rem] bg-yellow-500 rounded-full shadow-[0px_0px_15px_7px_rgba(255,215,0,0.7)]"></div>
         
         {services.map((service, index) => (
           <div
             key={index}
-            className={`cards absolute w-[80px] h-[80px] md:w-[5rem] md:h-[5rem] bg-white-700 rounded-full flex flex-col items-center justify-center shadow-lg p-2 border border-yellow-400 hover:shadow-[0px_0px_10px_5px_rgba(255,215,0,0.7)] transition duration-300`}
+            className={`cards absolute w-[85px] h-[85px] md:w-[5.3125rem] md:h-[5.3125rem] bg-white-700 rounded-full flex flex-col items-center justify-center shadow-lg p-2 border border-yellow-400 hover:shadow-[0px_0px_10px_5px_rgba(255,215,0,0.7)] transition duration-300`}
             style={{
-              transform: `rotate(${index * (360 / services.length)}deg) translate(150px) rotate(-${index * (360 / services.length)}deg)`,
+              transform: `rotate(${index * (360 / services.length)}deg) translate(120px) rotate(-${index * (360 / services.length)}deg)`,
             }}
           >
             <div className="text-[6px] md:text-sm">{service.icon}</div>
