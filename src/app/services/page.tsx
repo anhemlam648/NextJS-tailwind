@@ -42,7 +42,7 @@ export default function ServicesPage() {
 
       <div ref={containerRef} className="relative w-[300px] h-[300px] flex items-center justify-center">
         {/* Main Services */}
-        <div className="absolute w-[120px] h-[120px] bg-green-500 rounded-full shadow-[0px_0px_20px_10px_rgba(0,255,0,0.7)]"></div>
+        <div className="absolute w-[120px] h-[120px] bg-yellow-500 rounded-full shadow-[0px_0px_20px_10px_rgba(255,215,0,0.7)]"></div>
         
         {services.map((service, index) => (
           <div
