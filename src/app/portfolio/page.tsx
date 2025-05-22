@@ -13,10 +13,10 @@ interface Card {
 const cardsData: Card[] = [
   { title: 'React', description: 'A JavaScript library for building UI.' },
   { title: 'Tailwind CSS', description: 'Utility-first CSS framework.' },
-  { title: 'NestJS', description: 'Scalable backend framework.' },
-  { title: 'NestJS', description: 'Scalable backend framework.' },
-  { title: 'NestJS', description: 'Scalable backend framework.' },
+  { title: 'NextJS', description: 'Scalable frontend framework built with React.' },
   { title: 'GSAP', description: 'Animation library for smooth effects.' },
+  { title: 'TypeScript', description: 'A superset of JavaScript that adds type safety.' },
+  { title: 'Git', description: 'A distributed version control system.' },
 ];
 
 
@@ -44,7 +44,7 @@ const FlipCardDeck = () => {
               }`}
             >
               {/* Front Side change state */}
-              <div className="absolute w-full h-full flex items-center justify-center bg-gray-800 rounded-lg text-xl font-bold backface-hidden select-none">
+              <div className="absolute w-full h-full flex items-center justify-center bg-white border-4 border-yellow-400 rounded-lg text-xl font-bold backface-hidden select-none">
                 <span role="img" aria-label="flip">
                   🔄
                 </span>{' '}
@@ -53,7 +53,7 @@ const FlipCardDeck = () => {
             
               {/* View */}
               <div
-                className="absolute w-full h-full flex flex-col items-center justify-center bg-white-500 border-2 border-green-500 rounded-lg text-lg text-white backface-hidden select-none"
+                className="absolute w-full h-full flex flex-col items-center justify-center bg-white-500 border-2 border-yellow-400 rounded-lg text-lg text-white backface-hidden select-none"
                 style={{ transform: 'rotateX(180deg)' }}>
                  
                  <h2 className="text-2xl font-semibold">{card.title}</h2>
