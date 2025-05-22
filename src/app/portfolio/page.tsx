@@ -3,10 +3,12 @@
 'use client';
 import React, { useState } from 'react';
 
+
 interface Card {
   title: string;
   description: string;
 }
+
 
 const cardsData: Card[] = [
   { title: 'React', description: 'A JavaScript library for building UI.' },
@@ -16,6 +18,7 @@ const cardsData: Card[] = [
   { title: 'NestJS', description: 'Scalable backend framework.' },
   { title: 'GSAP', description: 'Animation library for smooth effects.' },
 ];
+
 
 const FlipCardDeck = () => {
   const [flippedCards, setFlippedCards] = useState<boolean[]>(new Array(cardsData.length).fill(false)); //add to lenght of cardsData and set to state
@@ -27,7 +30,7 @@ const FlipCardDeck = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-800 via-gray-900 to-black flex items-center justify-center p-10 px-6 py-16 mt-20 overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-b from-yellow-400 via-blue-900 to-gray-800 flex items-center justify-center p-10 px-6 py-16 mt-20 overflow-hidden">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {cardsData.map((card, index) => (
           <div
@@ -47,14 +50,15 @@ const FlipCardDeck = () => {
                 </span>{' '}
                 Click to Flip
               </div>
-
+            
               {/* View */}
               <div
                 className="absolute w-full h-full flex flex-col items-center justify-center bg-white-500 border-2 border-green-500 rounded-lg text-lg text-white backface-hidden select-none"
-                style={{ transform: 'rotateX(180deg)' }}
-              >
-                <h2 className="text-2xl font-semibold">{card.title}</h2>
+                style={{ transform: 'rotateX(180deg)' }}>
+                 
+                 <h2 className="text-2xl font-semibold">{card.title}</h2>
                 <p className="mt-2 px-4 text-center">{card.description}</p>
+
               </div>
             </div>
           </div>
