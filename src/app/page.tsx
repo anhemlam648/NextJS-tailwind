@@ -66,7 +66,7 @@ export default function Home() {
           </div>
         ))}
       </div>
-      
+
       {/* Action */}
       <div className="mt-10 text-center mb-5 fade-in">
         <p className="text-lg text-green-200">Want to know more?</p>
