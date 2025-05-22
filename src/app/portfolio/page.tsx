@@ -12,6 +12,8 @@ const cardsData: Card[] = [
   { title: 'React', description: 'A JavaScript library for building UI.' },
   { title: 'Tailwind CSS', description: 'Utility-first CSS framework.' },
   { title: 'NestJS', description: 'Scalable backend framework.' },
+  { title: 'NestJS', description: 'Scalable backend framework.' },
+  { title: 'NestJS', description: 'Scalable backend framework.' },
   { title: 'GSAP', description: 'Animation library for smooth effects.' },
 ];
 
@@ -48,7 +50,7 @@ const FlipCardDeck = () => {
 
               {/* View */}
               <div
-                className="absolute w-full h-full flex flex-col items-center justify-center bg-blue-500 rounded-lg text-lg text-white backface-hidden select-none"
+                className="absolute w-full h-full flex flex-col items-center justify-center bg-white-500 border-2 border-green-500 rounded-lg text-lg text-white backface-hidden select-none"
                 style={{ transform: 'rotateX(180deg)' }}
               >
                 <h2 className="text-2xl font-semibold">{card.title}</h2>
