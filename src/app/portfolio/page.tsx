@@ -26,7 +26,6 @@ const FlipCardDeck = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-800 via-gray-900 to-black flex items-center justify-center p-10 px-6 py-16 mt-20 overflow-hidden">
-      <h1 className="text-3xl font-extrabold mb-8 text-center">🎴 Portfolio Card Deck</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {cardsData.map((card, index) => (
           <div
@@ -36,7 +35,7 @@ const FlipCardDeck = () => {
           >
             <div
               className={`absolute w-full h-full rounded-lg shadow-lg transition-transform duration-700 ease-in-out transform-style-preserve-3d ${
-                flippedCards[index] ? 'rotate-x-150' : ''
+                flippedCards[index] ? 'rotate-x-180' : ''
               }`}
             >
               {/* Front Side change state */}
