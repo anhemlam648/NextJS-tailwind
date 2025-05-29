@@ -16,4 +16,7 @@ bun dev
 
 Open [http://localhost:5000](http://localhost:5000) with your browser to see the result.
 
+It’s designed to serve as a clean, minimal starting point — perfect for anyone who wants to quickly launch a portfolio or personal site, and then freely **customize, extend, or modify** it to fit their own style and needs.
+
+
 
