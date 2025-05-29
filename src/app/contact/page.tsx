@@ -6,6 +6,7 @@ import { gsap } from 'gsap';
 const steps = [
   { question: '👋 Hello! What your name?', field: 'name' },
   { question: '💬 Nice to meet you', field: 'message' },
+  { question: '❤️ Have a good day!', field: 'message' },
   { question: '✅ Thank you for coming! see you again. 🎉', field: null },
 ];
 
@@ -17,9 +18,10 @@ const BubbleChatContact = () => {
   useEffect(() => {
     if (currentStep < steps.length) {
       const question = steps[currentStep].question;
-      setTimeout(() => {
+      const time = setTimeout(() => {
         setShowBubbles((prev) => [...prev, `🤖 ${question}`]);
-      }, 1000); // Show the question after 1 second
+      }, 300); // Show the question after 1 second
+      return () => clearTimeout(time); // Cleanup the timeout on unmount or step change
     }
   }, [currentStep]); // setup effect to show the next question after a delay
 
@@ -34,40 +36,54 @@ const BubbleChatContact = () => {
 
   return (
     <div className="min-h-screen  bg-gradient-to-b from-yellow-400 via-blue-900 to-gray-800 to-black text-white flex items-center justify-center p-6">
-      <div className="w-full max-w-md bg-gray-800 p-6 rounded-xl shadow-lg space-y-4">
-        <h2 className="text-center text-2xl font-bold mb-2">💌 Contact Us (Chat Mode Demo)</h2>
-        <div className="space-y-3 max-h-96 overflow-y-auto">
-          {showBubbles.map((bubble, i) => (
-            <div key={i} className={`rounded-xl px-4 py-2 w-fit ${bubble.startsWith('🤖') ? 'bg-blue-600 self-start' : 'bg-gray-700 self-end'} transition-all`}>
-              {bubble}
+      <div className="w-full max-w-md bg-black p-6 rounded-xl shadow-2xl space-y-4 border border-yellow-500/30">
+        <h2 className="text-center text-2xl font-bold mb-2 drop-shadow">
+            💌 Contact Us (Chat Mode Demo)
+        </h2>
+        {/* Chat bubbles container */}
+        <div className="space-y-3 max-h-96 overflow-y-auto flex flex-col mt-10">
+            {showBubbles.map((bubble, i) => (
+            <div
+                key={i}
+                className={`rounded-xl px-4 py-2 w-fit max-w-[85%] ${
+                bubble.startsWith('🤖')
+                    ? 'bg-yellow-400 text-black self-start'
+                    : 'bg-gray-800 text-white self-end'
+                } shadow-md transition-all`}
+            >
+                {bubble}
             </div>
-          ))}
+            ))}
         </div>
-
+        
+        {/* Input form for the next step */}
         {currentStep < steps.length - 1 && (
-          <form
+            <form
             onSubmit={(e) => {
-              e.preventDefault();
-              const input = (e.target as any).elements[0].value;
-              if (input.trim() !== '') {
+                e.preventDefault();
+                const input = (e.target as any).elements[0].value;
+                if (input.trim() !== '') {
                 handleInput(input);
                 (e.target as any).reset();
-              }
+                }
             }}
             className="flex gap-2 pt-2"
-          >
+            >
             <input
-              type="text"
-              placeholder="Input..."
-              className="flex-1 px-4 py-2 rounded-lg bg-gray-700 text-white focus:outline-none"
-              autoFocus
+                type="text"
+                placeholder="Type your response..."
+                className="flex-1 px-4 py-2 rounded-lg bg-black text-white placeholder-gray-400 border border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition"
+                autoFocus
             />
-            <button type="submit" className="bg-purple-600 px-4 py-2 rounded-lg hover:bg-purple-700 transition">
-              Send
+            <button
+                type="submit"
+                className="bg-yellow-400 text-black px-4 py-2 rounded-lg hover:bg-yellow-400 font-semibold transition"
+            >
+                Send
             </button>
-          </form>
+            </form>
         )}
-      </div>
+        </div>
     </div>
   );
 };
