@@ -49,7 +49,7 @@ const BubbleChatContact = () => {
                 className={`rounded-xl px-3 py-1.5 sm:px-4 sm:py-2 w-fit max-w-[85%] ${
                 bubble.startsWith('🤖')
                     ? 'bg-yellow-400 text-black self-start'
-                    : 'bg-gray-800 text-white self-end'
+                    : 'bg-gray-700 text-white self-end'
                 } shadow-md transition-all`}
             >
                 {bubble}
