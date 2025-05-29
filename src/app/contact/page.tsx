@@ -34,18 +34,19 @@ const BubbleChatContact = () => {
     }
   };
 
-  return (
-    <div className="min-h-screen  bg-gradient-to-b from-yellow-400 via-blue-900 to-gray-800 to-black text-white flex items-center justify-center p-6">
-      <div className="w-full max-w-md bg-black p-6 rounded-xl shadow-2xl space-y-4 border border-yellow-500/30">
-        <h2 className="text-center text-2xl font-bold mb-2 drop-shadow">
+    return (
+    <div className="min-h-screen bg-gradient-to-b from-yellow-400 via-blue-900 to-gray-800 to-black text-white flex items-center justify-center p-4 sm:p-6">
+        <div className="w-full max-w-xs sm:max-w-md bg-black p-4 sm:p-6 rounded-xl shadow-2xl space-y-4 border border-yellow-500/30">
+        <h2 className="text-center text-xl sm:text-2xl font-bold mb-2 drop-shadow">
             💌 Contact Us (Chat Mode Demo)
         </h2>
+
         {/* Chat bubbles container */}
-        <div className="space-y-3 max-h-96 overflow-y-auto flex flex-col mt-10">
+        <div className="space-y-3 max-h-64 sm:max-h-96 overflow-y-auto flex flex-col mt-8 sm:mt-10">
             {showBubbles.map((bubble, i) => (
             <div
                 key={i}
-                className={`rounded-xl px-4 py-2 w-fit max-w-[85%] ${
+                className={`rounded-xl px-3 py-1.5 sm:px-4 sm:py-2 w-fit max-w-[85%] ${
                 bubble.startsWith('🤖')
                     ? 'bg-yellow-400 text-black self-start'
                     : 'bg-gray-800 text-white self-end'
@@ -55,8 +56,8 @@ const BubbleChatContact = () => {
             </div>
             ))}
         </div>
-        
-        {/* Input form for the next step */}
+
+        {/* Input form */}
         {currentStep < steps.length - 1 && (
             <form
             onSubmit={(e) => {
@@ -72,12 +73,12 @@ const BubbleChatContact = () => {
             <input
                 type="text"
                 placeholder="Type your response..."
-                className="flex-1 px-4 py-2 rounded-lg bg-black text-white placeholder-gray-400 border border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition"
+                className="flex-1 px-3 py-1.5 rounded-lg bg-black text-white placeholder-gray-400 border border-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition text-sm sm:text-base"
                 autoFocus
             />
             <button
                 type="submit"
-                className="bg-yellow-400 text-black px-4 py-2 rounded-lg hover:bg-yellow-400 font-semibold transition"
+                className="bg-yellow-400 text-black px-4 py-2 rounded-lg hover:bg-yellow-500 font-semibold transition text-sm sm:text-base"
             >
                 Send
             </button>
@@ -85,7 +86,7 @@ const BubbleChatContact = () => {
         )}
         </div>
     </div>
-  );
+    );
 };
 
 export default BubbleChatContact;
